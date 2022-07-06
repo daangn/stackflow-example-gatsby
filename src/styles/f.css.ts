@@ -95,3 +95,8 @@ export const overflowScroll = style({
 export const rootLineHeight = style({
   lineHeight: "1.15",
 });
+
+export const imgObjectFitCover = style({
+  objectFit: 'cover',
+  objectPosition: '50% 50%',
+})

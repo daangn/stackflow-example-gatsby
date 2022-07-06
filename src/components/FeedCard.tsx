@@ -2,6 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { useFlow } from "../lib/useFlow";
+import { f } from "../styles";
 import * as css from "./FeedCard.css";
 
 interface FeedCardProps {
@@ -33,6 +34,7 @@ const FeedCard: React.FC<FeedCardProps> = ({
       <button type="button" className={css.button} onClick={onClick}>
         <div className={css.thumbnail}>
           <LazyLoadImage
+            className={f.imgObjectFitCover}
             src={imageUrl}
             effect="opacity"
             width={108}

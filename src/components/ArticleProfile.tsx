@@ -2,6 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import ImageProfileRating from "../assets/ImageProfileRating";
+import { f } from "../styles";
 import * as css from "./ArticleProfile.css";
 
 const ArticleProfile: React.FC = () => {
@@ -11,6 +12,7 @@ const ArticleProfile: React.FC = () => {
     <div className={css.container}>
       <div className={css.avatar}>
         <LazyLoadImage
+          className={f.imgObjectFitCover}
           src={imageUrl}
           effect="opacity"
           width="100%"

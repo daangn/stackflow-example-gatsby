@@ -2,6 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { useFlow } from "../lib/useFlow";
+import { f } from "../styles";
 import * as css from "./ArticleCard.css";
 
 interface ArticleCardProps {
@@ -29,6 +30,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
       <div className={css.thumbnail}>
         <div className={css.innerImage}>
           <LazyLoadImage
+            className={f.imgObjectFitCover}
             src={imageUrl}
             effect="opacity"
             width="100%"

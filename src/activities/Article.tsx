@@ -6,6 +6,7 @@ import ArticleCard from "../components/ArticleCard";
 import ArticleProfile from "../components/ArticleProfile";
 import Layout from "../components/Layout";
 import { readPreloadData } from "../lib/readPreloadData";
+import { f } from "../styles";
 import * as css from "./Article.css";
 
 export interface ArticleParams {
@@ -23,6 +24,7 @@ const Article: React.FC<ArticleParams> = () => {
         <div className={css.image}>
           <div className={css.imageInner}>
             <LazyLoadImage
+              className={f.imgObjectFitCover}
               src={imageUrl}
               effect="opacity"
               width="100%"

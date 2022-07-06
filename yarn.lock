@@ -648,7 +648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-dynamic-import@npm:^7.7.4, @babel/plugin-syntax-dynamic-import@npm:^7.8.3":
+"@babel/plugin-syntax-dynamic-import@npm:^7.8.3":
   version: 7.8.3
   resolution: "@babel/plugin-syntax-dynamic-import@npm:7.8.3"
   dependencies:
@@ -1422,7 +1422,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.7, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2, @babel/runtime@npm:^7.9.6":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.18.6
   resolution: "@babel/runtime@npm:7.18.6"
   dependencies:
@@ -2561,53 +2561,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@loadable/babel-plugin@npm:^5.13.2":
-  version: 5.13.2
-  resolution: "@loadable/babel-plugin@npm:5.13.2"
-  dependencies:
-    "@babel/plugin-syntax-dynamic-import": ^7.7.4
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-  checksum: c7e8376d97d66f03a440e6d9e09d64234713a71403d418af2c551c4e4fdfc5943be7ac506ef2425701f6ceb971941822edb7b224e75b6d94bddbeb3492f5da34
-  languageName: node
-  linkType: hard
-
-"@loadable/component@npm:^5.15.2":
-  version: 5.15.2
-  resolution: "@loadable/component@npm:5.15.2"
-  dependencies:
-    "@babel/runtime": ^7.7.7
-    hoist-non-react-statics: ^3.3.1
-    react-is: ^16.12.0
-  peerDependencies:
-    react: ">=16.3.0"
-  checksum: dd027f3f9fb684613506fe48dcb656367a13731c139134fb71c2bc1734df4218fdb64e5ca80fa2575fdf52e1be0e0a2ec770f0ca77275706e66d1074d0835401
-  languageName: node
-  linkType: hard
-
-"@loadable/server@npm:^5.15.0":
-  version: 5.15.2
-  resolution: "@loadable/server@npm:5.15.2"
-  dependencies:
-    lodash: ^4.17.15
-  peerDependencies:
-    "@loadable/component": ^5.0.1
-    react: ">=16.3.0"
-  checksum: 9f7188b4d79717dd058ed9064fcf8454f236dc2165280203110d34e8a7f63cbe8ba9ab77a337174108a150b05715b64b0131295a28b2866b320514299f35db29
-  languageName: node
-  linkType: hard
-
-"@loadable/webpack-plugin@npm:^5.15.0":
-  version: 5.15.2
-  resolution: "@loadable/webpack-plugin@npm:5.15.2"
-  dependencies:
-    make-dir: ^3.0.2
-  peerDependencies:
-    webpack: ">=4.6.0"
-  checksum: fee31c7f8c158c1cf987dee57e1a8e7b822decd004fd3c00895e30c6780584410d0199e44d10e7bf225ea30bed439404755272396d515d51a65f02e8e3ae1db0
-  languageName: node
-  linkType: hard
-
 "@microsoft/fetch-event-source@npm:2.0.1":
   version: 2.0.1
   resolution: "@microsoft/fetch-event-source@npm:2.0.1"
@@ -3550,15 +3503,6 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: e009a2bfb50e90ca9b7c6e8f648f8464067271fd99116f881073fa6fa76dc8d0133181dd65e6614d5fb1220d671d67b0124aef7d97dc02d7e342ab143a47779d
-  languageName: node
-  linkType: hard
-
-"@types/loadable__component@npm:^5.13.4":
-  version: 5.13.4
-  resolution: "@types/loadable__component@npm:5.13.4"
-  dependencies:
-    "@types/react": "*"
-  checksum: a2d1c77b952eb15c45dfad841a7a0a3e4045f828e1f0ecbab997a306a56a48cd48ee12ee75bf79f59bbcff0347bbeb120106e8e66c91a38a530a028e1598b130
   languageName: node
   linkType: hard
 
@@ -7948,22 +7892,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-loadable-components-ssr@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-plugin-loadable-components-ssr@npm:4.2.0"
-  dependencies:
-    "@babel/runtime": ^7.9.6
-    "@loadable/babel-plugin": ^5.13.2
-    "@loadable/server": ^5.15.0
-    "@loadable/webpack-plugin": ^5.15.0
-  peerDependencies:
-    "@loadable/component": ^5.15.0
-    gatsby: ^2.12.1 || ^3.0.0 || ^4.0.0
-    react-dom: ^16.12.0 || ^17.0.1
-  checksum: b96ca813c42b3df2f65a898a2372dc3d01e7137141dea5b1a423d625d8bc7471f44c6b4c21d7943b52020f8908411e071512434f06a601cba669514d8f330e66
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-page-creator@npm:^4.17.0":
   version: 4.17.0
   resolution: "gatsby-plugin-page-creator@npm:4.17.0"
@@ -8936,15 +8864,6 @@ __metadata:
     capital-case: ^1.0.4
     tslib: ^2.0.3
   checksum: 571c83eeb25e8130d172218712f807c0b96d62b020981400bccc1503a7cf14b09b8b10498a962d2739eccf231d950e3848ba7d420b58a6acd2f9283439546cd9
-  languageName: node
-  linkType: hard
-
-"hoist-non-react-statics@npm:^3.3.1":
-  version: 3.3.2
-  resolution: "hoist-non-react-statics@npm:3.3.2"
-  dependencies:
-    react-is: ^16.7.0
-  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
   languageName: node
   linkType: hard
 
@@ -13060,15 +12979,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:~18.0.0":
-  version: 18.0.0
-  resolution: "react-dom@npm:18.0.0"
+"react-dom@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    scheduler: ^0.21.0
+    scheduler: ^0.23.0
   peerDependencies:
-    react: ^18.0.0
-  checksum: dd0ba9f2f31dd728076c892a95b2f5a8dfe79136431b0289afb46eec39d0ca6b6f0f40a60fd8aa6ef702c98ce7c26100d3d4dbc35c7c9e87429cd04f84cb58bd
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
   languageName: node
   linkType: hard
 
@@ -13093,7 +13012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.12.0, react-is@npm:^16.13.1, react-is@npm:^16.7.0":
+"react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -13127,12 +13046,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:~18.0.0":
-  version: 18.0.0
-  resolution: "react@npm:18.0.0"
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 293020b96536b3c7113ee57ca5c990a3f25649d1751b1c7a3aabd16dff0691fe9f1eed1206616d0906d05933536052037340a0c8d0941ff870b0eb469a2f975b
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -13687,12 +13606,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.21.0":
-  version: 0.21.0
-  resolution: "scheduler@npm:0.21.0"
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 4f8285076041ed2c81acdd1faa987f1655fdbd30554bc667c1ea64743fc74fb3a04ca7d27454b3d678735df5a230137a3b84756061b43dc5796e80701b66d124
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
   languageName: node
   linkType: hard
 
@@ -14234,7 +14153,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "stackflow-gatsby@workspace:."
   dependencies:
-    "@loadable/component": ^5.15.2
     "@seed-design/design-token": ^1.0.0-alpha.0
     "@seed-design/stylesheet": ^1.0.0-beta.1
     "@stackflow/basic-ui": canary
@@ -14242,7 +14160,6 @@ __metadata:
     "@stackflow/plugin-history-sync": canary
     "@stackflow/plugin-renderer-basic": canary
     "@stackflow/react": canary
-    "@types/loadable__component": ^5.13.4
     "@types/node": ^17.0.45
     "@types/react": ^18.0.14
     "@types/react-dom": ^18.0.5
@@ -14251,14 +14168,13 @@ __metadata:
     "@vanilla-extract/css": ^1.7.2
     "@vanilla-extract/webpack-plugin": ^2.1.11
     gatsby: ^4.17.2
-    gatsby-plugin-loadable-components-ssr: ^4.2.0
     gatsby-plugin-vanilla-extract: ^2.0.1
     gatsby-source-filesystem: ^4.17.0
     gatsby-transformer-remark: ^5.17.0
     normalize.css: ^8.0.1
     prop-types: ^15.8.1
-    react: ~18.0.0
-    react-dom: ~18.0.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
     react-lazy-load-image-component: ^1.5.4
     ts-dedent: ^2.2.0
     typescript: ^4.7.4

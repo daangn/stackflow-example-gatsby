@@ -1,8 +1,7 @@
 {
-  "name": "stackflow-gatsby",
+  "name": "stackflow-example-gatsby",
   "version": "1.0.0",
   "private": true,
-  "description": "stackflow-gatsby",
   "author": "Tony",
   "keywords": [
     "gatsby"

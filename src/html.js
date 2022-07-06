@@ -13,7 +13,11 @@ const STACKFLOW_BASIC_UI_THEME_SCRIPT = dedent`
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes}>
+    <html
+      {...props.htmlAttributes} data-seed=""
+      data-seed-scale-color="light"
+      data-stackflow-basic-ui-theme="android"
+    >
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

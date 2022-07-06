@@ -14149,9 +14149,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stackflow-gatsby@workspace:.":
+"stackflow-example-gatsby@workspace:.":
   version: 0.0.0-use.local
-  resolution: "stackflow-gatsby@workspace:."
+  resolution: "stackflow-example-gatsby@workspace:."
   dependencies:
     "@seed-design/design-token": ^1.0.0-alpha.0
     "@seed-design/stylesheet": ^1.0.0-beta.1

@@ -3200,8 +3200,8 @@ __metadata:
   linkType: hard
 
 "@stackflow/basic-ui@npm:canary":
-  version: 0.3.1-alpha.0
-  resolution: "@stackflow/basic-ui@npm:0.3.1-alpha.0"
+  version: 0.3.1-alpha.2
+  resolution: "@stackflow/basic-ui@npm:0.3.1-alpha.2"
   dependencies:
     "@vanilla-extract/dynamic": ^2.0.2
   peerDependencies:
@@ -3209,7 +3209,7 @@ __metadata:
     "@stackflow/react": ^0.1.0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 45a858886134cd5302eb7af1acf9b4a120fb732b00e25e3ea0a8339786b7548774920349532a4c2d0c0776a1b05cc8ca273604e93115d6050bb79e217a1930fd
+  checksum: f77bac743e662fe07787f2cfeb58bd58a08185c67b7d8fd163cd9d3189e992b6684dc39cc9bf9be4e56d6059bc41130667dd0510d0e59d05cd060338cf5be1ec
   languageName: node
   linkType: hard
 

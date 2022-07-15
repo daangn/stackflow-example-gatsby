@@ -7,10 +7,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
+    "start": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },

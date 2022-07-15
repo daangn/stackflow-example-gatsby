@@ -15,46 +15,49 @@ const activities = {
 export const { Stack } = stackflow({
   transitionDuration: 350,
   activities,
-  plugins: [basicRendererPlugin(), historySyncPlugin({
-    routes: {
-      Main: "/",
-      Article: "/articles/:articleId",
-    },
-    fallbackActivity: () => "Main",
-    experimental_initialPreloadRef({ context, activityId }) {
-      if (!preloadDataMap[activityId]) {
-        preloadDataMap[activityId] = {
-          _t: "ok",
-          data: context.data
+  plugins: [
+    basicRendererPlugin(),
+    historySyncPlugin({
+      routes: {
+        Main: "/",
+        Article: "/articles/:articleId",
+      },
+      fallbackActivity: () => "Main",
+      experimental_initialPreloadRef({ context, activityId }) {
+        if (!preloadDataMap[activityId]) {
+          preloadDataMap[activityId] = {
+            _t: "ok",
+            data: context.data
+          }
         }
-      }
-      return {
-        activityId,
-      }
-    },
-    experimental_preloadRef({ path, activityId }) {
-      if (!preloadDataMap[activityId]) {
-        const promise = window.___loader
-          .loadPage(path)
-          .then((result: any) => {
-            preloadDataMap[activityId] = {
-              _t: 'ok',
-              data: result.json.data
-            }
-          })
-  
-        preloadDataMap[activityId] = {
-          _t: 'pending',
-          promise,
+        return {
+          activityId,
         }
-      }
+      },
+      experimental_preloadRef({ path, activityId }) {
+        if (!preloadDataMap[activityId]) {
+          const promise = window.___loader
+            .loadPage(path)
+            .then((result: any) => {
+              preloadDataMap[activityId] = {
+                _t: 'ok',
+                data: result.json.data
+              }
+            })
+    
+          preloadDataMap[activityId] = {
+            _t: 'pending',
+            promise,
+          }
+        }
 
-      return {
-        activityId,
-      }
-    },
-    experimental_startTransition: startTransition,
-  })],
+        return {
+          activityId,
+        }
+      },
+      experimental_startTransition: startTransition,
+    }),
+  ],
 });
 
 export type TypeActivities = typeof activities

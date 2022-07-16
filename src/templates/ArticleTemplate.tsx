@@ -1,13 +1,11 @@
-import { graphql, PageProps } from "gatsby"
-import * as React from "react"
+import { graphql, PageProps } from "gatsby";
+import * as React from "react";
 
-const ArticleTemplate: React.FC<PageProps> = () => {
-  return null
-}
+const ArticleTemplate: React.FC<PageProps> = () => null;
 
 export const query = graphql`
   query ArticleTemplateQuery($articleId: Int!) {
-    markdownRemark(frontmatter: {id: {eq: $articleId}}) {
+    markdownRemark(frontmatter: { id: { eq: $articleId } }) {
       frontmatter {
         id
         title
@@ -27,6 +25,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default ArticleTemplate
+export default ArticleTemplate;

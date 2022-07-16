@@ -13,10 +13,13 @@ export interface ArticleParams {
   articleId: string;
 }
 const Article: React.FC<ArticleParams> = () => {
-  const activity = useActivity()
-  const data = readPreloadData<Queries.ArticleTemplateQueryQuery>(activity.preloadRef)
+  const activity = useActivity();
+  const data = readPreloadData<Queries.ArticleTemplateQueryQuery>(
+    activity.preloadRef,
+  );
 
-  const imageUrl = `https://picsum.photos/800/800/?id=${data.markdownRemark!.frontmatter!.id!}`;
+  const imageUrl = `https://picsum.photos/800/800/?id=${data.markdownRemark!
+    .frontmatter!.id!}`;
 
   return (
     <Layout>
@@ -34,9 +37,16 @@ const Article: React.FC<ArticleParams> = () => {
         </div>
         <ArticleProfile />
         <div className={css.content}>
-          <div className={css.title}>{data.markdownRemark?.frontmatter?.title}</div>
-          <div className={css.subtitle}>Baby & Kids ∙ {data.markdownRemark?.frontmatter?.daysAgo} days ago</div>
-          <div className={css.body} dangerouslySetInnerHTML={{ __html: data.markdownRemark!.html! }}/>
+          <div className={css.title}>
+            {data.markdownRemark?.frontmatter?.title}
+          </div>
+          <div className={css.subtitle}>
+            Baby & Kids ∙ {data.markdownRemark?.frontmatter?.daysAgo} days ago
+          </div>
+          <div
+            className={css.body}
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark!.html! }}
+          />
           <div className={css.subtitle}>1 chats ∙ 2 favorites ∙ 212 views</div>
         </div>
         <div className={css.section}>

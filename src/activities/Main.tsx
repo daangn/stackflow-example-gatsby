@@ -12,8 +12,10 @@ import { readPreloadData } from "../lib/readPreloadData";
 import * as css from "./Main.css";
 
 const Main: React.FC = () => {
-  const activity = useActivity()
-  const data = readPreloadData<Queries.MainTemplateQueryQuery>(activity.preloadRef)
+  const activity = useActivity();
+  const data = readPreloadData<Queries.MainTemplateQueryQuery>(
+    activity.preloadRef,
+  );
 
   const appBarLeft = () => (
     <div className={css.appBarLeft}>

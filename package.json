@@ -2,15 +2,16 @@
   "name": "stackflow-example-gatsby",
   "version": "1.0.0",
   "private": true,
-  "author": "Tony",
   "keywords": [
     "gatsby"
   ],
+  "author": "Tony",
   "scripts": {
-    "dev": "gatsby develop",
     "build": "gatsby build",
-    "start": "gatsby serve",
     "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "format": "eslint --fix --ignore-path .gitignore && prettier -w .",
+    "start": "gatsby serve",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -36,10 +37,21 @@
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@types/react-lazy-load-image-component": "^1.5.2",
+    "@typescript-eslint/parser": "^5.20.0",
     "@vanilla-extract/babel-plugin": "^1.1.7",
     "@vanilla-extract/css": "^1.7.2",
     "@vanilla-extract/webpack-plugin": "^2.1.11",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "gatsby-plugin-vanilla-extract": "^2.0.1",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   },
   "packageManager": "yarn@3.2.1"

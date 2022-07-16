@@ -1,19 +1,22 @@
-import type { GatsbyNode, CreatePagesArgs } from "gatsby"
-import path from 'path'
+import type { CreatePagesArgs } from "gatsby";
+import path from "path";
 
-const gql = String.raw
+const gql = String.raw;
 
-export async function createPages({ actions: { createPage}, graphql }: CreatePagesArgs) {
-  const MainTemplate = path.resolve("./src/templates/MainTemplate.tsx")
-  const ArticleTemplate = path.resolve("./src/templates/ArticleTemplate.tsx")
+export async function createPages({
+  actions: { createPage },
+  graphql,
+}: CreatePagesArgs) {
+  const MainTemplate = path.resolve("./src/templates/MainTemplate.tsx");
+  const ArticleTemplate = path.resolve("./src/templates/ArticleTemplate.tsx");
 
   createPage({
     path: "/",
     component: MainTemplate,
     context: {},
-  })
+  });
 
-  const { data } = await graphql(gql`
+  const { data } = (await graphql(gql`
     query {
       allMarkdownRemark {
         nodes {
@@ -26,7 +29,7 @@ export async function createPages({ actions: { createPage}, graphql }: CreatePag
         }
       }
     }
-  `) as any
+  `)) as any;
 
   data.allMarkdownRemark.nodes.forEach((node: any) => {
     createPage({
@@ -35,6 +38,6 @@ export async function createPages({ actions: { createPage}, graphql }: CreatePag
       context: {
         articleId: node.frontmatter.id,
       },
-    })
-  })
+    });
+  });
 }

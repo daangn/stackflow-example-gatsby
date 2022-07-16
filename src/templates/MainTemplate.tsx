@@ -1,9 +1,7 @@
-import { graphql, PageProps } from "gatsby"
-import * as React from "react"
+import { graphql, PageProps } from "gatsby";
+import * as React from "react";
 
-const MainTemplate: React.FC<PageProps> = () => {
-  return null
-}
+const MainTemplate: React.FC<PageProps> = () => null;
 
 export const query = graphql`
   query MainTemplateQuery {
@@ -19,6 +17,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default MainTemplate
+export default MainTemplate;

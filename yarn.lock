@@ -3228,63 +3228,74 @@ __metadata:
   linkType: hard
 
 "@stackflow/basic-ui@npm:canary":
-  version: 0.3.1-alpha.2
-  resolution: "@stackflow/basic-ui@npm:0.3.1-alpha.2"
+  version: 0.6.1-alpha.1
+  resolution: "@stackflow/basic-ui@npm:0.6.1-alpha.1"
   dependencies:
     "@vanilla-extract/dynamic": ^2.0.2
   peerDependencies:
-    "@stackflow/core": ^0.1.0
-    "@stackflow/react": ^0.1.0
+    "@stackflow/core": 0
+    "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: f77bac743e662fe07787f2cfeb58bd58a08185c67b7d8fd163cd9d3189e992b6684dc39cc9bf9be4e56d6059bc41130667dd0510d0e59d05cd060338cf5be1ec
+  checksum: f8d4a5599967905d64d709a8af0289e102db3be0d614893fd17d3f6c98852cdd3898983c39e2a6889f05d1b1d84f3f0715871731e246ff9d1d6a034ab86726a7
   languageName: node
   linkType: hard
 
 "@stackflow/core@npm:canary":
-  version: 0.2.2-alpha.7
-  resolution: "@stackflow/core@npm:0.2.2-alpha.7"
+  version: 0.4.2-alpha.15
+  resolution: "@stackflow/core@npm:0.4.2-alpha.15"
   dependencies:
     react-fast-compare: ^3.2.0
-  checksum: b9a540c72c6f844be09041a7f56b4bc3d84dc018fde2ad60043a6fcd528be2ec5e20f1731375f7ae62b5b0ccabc84bd73a89e599d47b2107449ad48a62567de8
+  checksum: 05023c1f225577d8615cef56326c1b4de7a331afeae524fa1b3ff114f9f8b28e3fb436d809c252e66440ebded8632c05e8973336c37f9ffb198e0e7bebfd9c04
   languageName: node
   linkType: hard
 
 "@stackflow/plugin-history-sync@npm:canary":
-  version: 0.4.1-alpha.9
-  resolution: "@stackflow/plugin-history-sync@npm:0.4.1-alpha.9"
+  version: 0.7.1-alpha.1
+  resolution: "@stackflow/plugin-history-sync@npm:0.7.1-alpha.1"
   dependencies:
     url-pattern: ^1.0.3
   peerDependencies:
-    "@stackflow/core": ^0.1.0
-    "@stackflow/react": ^0.2.3
+    "@stackflow/core": 0
+    "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: c114e85d2587a39bc3dde6b382303d121640d0f1ddcdd921143b2d7d42afefe8b76b852aa967364c5e82e3395c01659d30b7958bd441111dd7474012aef4566b
+  checksum: 0cbabd4d7992cd1bc96856548a575b90eb20a945848ad29ae19396c24d10b384feeaf3b161f361ea86e7bfa473ad01498bd817c7fc5540ca60e3af6a5f1b700d
+  languageName: node
+  linkType: hard
+
+"@stackflow/plugin-preload@npm:canary":
+  version: 0.1.1-alpha.233
+  resolution: "@stackflow/plugin-preload@npm:0.1.1-alpha.233"
+  peerDependencies:
+    "@stackflow/core": 0
+    "@stackflow/react": 0
+  checksum: 303ed5fb6c8b91e974e50bb5a3be186944b5188f4e158e1451b57a97625d7ad0b9afe60cf279926152ace5095e3bf0d16169294c86dd068142ebb8bf16acb944
   languageName: node
   linkType: hard
 
 "@stackflow/plugin-renderer-basic@npm:canary":
-  version: 0.3.1-alpha.0
-  resolution: "@stackflow/plugin-renderer-basic@npm:0.3.1-alpha.0"
+  version: 0.6.1-alpha.1
+  resolution: "@stackflow/plugin-renderer-basic@npm:0.6.1-alpha.1"
   peerDependencies:
-    "@stackflow/core": ^0.1.0
-    "@stackflow/react": ^0.1.0
+    "@stackflow/core": 0
+    "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: d981fe678cd0378c3d2f509370185be782e288a98050668d099b1a62c61e38bac4d8ddc58dc87357e6b7e0bd108a4b18b1446c8f102826715ed25cc53998eb67
+  checksum: 779f1216fdabb6bf1303ef3e8deaf995bf1ea0754f0c8a8acdfb3454942ac7dfcb2be9a5addbb6b58810ed0d537a7b820a592b9f4eff53ed58501885d3e81837
   languageName: node
   linkType: hard
 
 "@stackflow/react@npm:canary":
-  version: 0.3.1-alpha.0
-  resolution: "@stackflow/react@npm:0.3.1-alpha.0"
+  version: 0.6.1-alpha.1
+  resolution: "@stackflow/react@npm:0.6.1-alpha.1"
   dependencies:
     react-fast-compare: ^3.2.0
   peerDependencies:
-    "@stackflow/core": ^0.1.0
+    "@stackflow/core": 0
+    "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 1dc36758dbfbcfdef668ca15441680a758ff3c650d6571b9a8c44348f62ce22a04ab4c2d727a54069f34f62441bc1805d12d4533f9099ccfc4bed8f1c37a4b4c
+  checksum: f1fbea5e9fad72bf777f3eeb278e124f70aac6d7658458c6adbedc38441d6129bd624de078dffb97f8ae7511b5dad4520be3b8f2984cf09a03a245114c4fad23
   languageName: node
   linkType: hard
 
@@ -14542,6 +14553,7 @@ __metadata:
     "@stackflow/basic-ui": canary
     "@stackflow/core": canary
     "@stackflow/plugin-history-sync": canary
+    "@stackflow/plugin-preload": canary
     "@stackflow/plugin-renderer-basic": canary
     "@stackflow/react": canary
     "@types/node": ^17.0.45

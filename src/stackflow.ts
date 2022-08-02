@@ -1,8 +1,7 @@
 import { historySyncPlugin } from "@stackflow/plugin-history-sync";
-import { preloadPlugin } from "@stackflow/plugin-preload";
 import { basicRendererPlugin } from "@stackflow/plugin-renderer-basic";
 import { stackflow } from "@stackflow/react";
-import React from "react";
+import React, { startTransition } from "react";
 
 import { preloadDataMap } from "./lib/readPreloadData";
 
@@ -24,75 +23,39 @@ export const { Stack } = stackflow({
         Article: "/articles/:articleId",
       },
       fallbackActivity: () => "Main",
-    }),
-    preloadPlugin({
-      loaders: {
-        Main({ activityParams, isInitialActivity, initContext, eventContext }) {
-          const key = `Main#${JSON.stringify(activityParams)}`;
-
-          if (isInitialActivity) {
-            preloadDataMap[key] = {
-              _t: "ok",
-              data: initContext.data,
-            };
-          }
-
-          if (!preloadDataMap[key]) {
-            const promise = window.___loader
-              .loadPage(eventContext["plugin-history-sync"].path)
-              .then((result: any) => {
-                preloadDataMap[key] = {
-                  _t: "ok",
-                  data: result.json.data,
-                };
-              });
-
-            preloadDataMap[key] = {
-              _t: "pending",
-              promise,
-            };
-          }
-
-          return {
-            key,
+      experimental_initialPreloadRef({ context, activityId }) {
+        if (!preloadDataMap[activityId]) {
+          preloadDataMap[activityId] = {
+            _t: "ok",
+            data: context.data,
           };
-        },
-        Article({
-          activityParams,
-          isInitialActivity,
-          initContext,
-          eventContext,
-        }) {
-          const key = `Article#${JSON.stringify(activityParams)}`;
-
-          if (isInitialActivity) {
-            preloadDataMap[key] = {
-              _t: "ok",
-              data: initContext.data,
-            };
-          }
-
-          if (!preloadDataMap[key]) {
-            const promise = window.___loader
-              .loadPage(eventContext["plugin-history-sync"].path)
-              .then((result: any) => {
-                preloadDataMap[key] = {
-                  _t: "ok",
-                  data: result.json.data,
-                };
-              });
-
-            preloadDataMap[key] = {
-              _t: "pending",
-              promise,
-            };
-          }
-
-          return {
-            key,
-          };
-        },
+        }
+        return {
+          activityId,
+        };
       },
+      experimental_preloadRef({ path, activityId }) {
+        if (!preloadDataMap[activityId]) {
+          const promise = window.___loader
+            .loadPage(path)
+            .then((result: any) => {
+              preloadDataMap[activityId] = {
+                _t: "ok",
+                data: result.json.data,
+              };
+            });
+
+          preloadDataMap[activityId] = {
+            _t: "pending",
+            promise,
+          };
+        }
+
+        return {
+          activityId,
+        };
+      },
+      experimental_startTransition: startTransition,
     }),
   ],
 });

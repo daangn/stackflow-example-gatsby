@@ -4,8 +4,8 @@ export const preloadDataMap: {
     | { _t: "ok"; data: any };
 } = {};
 
-export function readPreloadData<T>(preloadRef: { key: string }): T {
-  const preloadData = preloadDataMap[preloadRef.key];
+export function readPreloadData<T>(preloadRef?: any): T {
+  const preloadData = preloadDataMap[preloadRef.activityId];
 
   switch (preloadData._t) {
     case "pending":

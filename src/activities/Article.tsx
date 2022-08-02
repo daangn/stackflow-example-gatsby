@@ -1,4 +1,4 @@
-import { ActivityComponentType, useActivityPreloadRef } from "@stackflow/react";
+import { useActivity, useActivityParams, useStack } from "@stackflow/react";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -12,9 +12,11 @@ import * as css from "./Article.css";
 export interface ArticleParams {
   articleId: string;
 }
-const Article: ActivityComponentType<ArticleParams> = () => {
-  const preloadRef = useActivityPreloadRef<{ key: string }>();
-  const data = readPreloadData<Queries.ArticleTemplateQueryQuery>(preloadRef);
+const Article: React.FC<ArticleParams> = () => {
+  const activity = useActivity();
+  const data = readPreloadData<Queries.ArticleTemplateQueryQuery>(
+    activity.preloadRef,
+  );
 
   const imageUrl = `https://picsum.photos/800/800/?id=${data.markdownRemark!
     .frontmatter!.id!}`;

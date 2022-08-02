@@ -20,6 +20,7 @@
     "@stackflow/basic-ui": "canary",
     "@stackflow/core": "canary",
     "@stackflow/plugin-history-sync": "canary",
+    "@stackflow/plugin-preload": "canary",
     "@stackflow/plugin-renderer-basic": "canary",
     "@stackflow/react": "canary",
     "gatsby": "^4.17.2",

@@ -1,4 +1,4 @@
-import { useActivity } from "@stackflow/react";
+import { ActivityComponentType, useActivityPreloadRef } from "@stackflow/react";
 import React from "react";
 
 import IconBell from "../assets/IconBell";
@@ -11,11 +11,9 @@ import Layout from "../components/Layout";
 import { readPreloadData } from "../lib/readPreloadData";
 import * as css from "./Main.css";
 
-const Main: React.FC = () => {
-  const activity = useActivity();
-  const data = readPreloadData<Queries.MainTemplateQueryQuery>(
-    activity.preloadRef,
-  );
+const Main: ActivityComponentType = () => {
+  const preloadRef = useActivityPreloadRef<{ key: string }>();
+  const data = readPreloadData<Queries.MainTemplateQueryQuery>(preloadRef);
 
   const appBarLeft = () => (
     <div className={css.appBarLeft}>

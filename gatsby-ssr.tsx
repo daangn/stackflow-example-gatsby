@@ -10,7 +10,7 @@ export const wrapPageElement = ({
   <React.StrictMode>
     <AppScreenThemeProvider>
       <React.Suspense>
-        <Stack context={{ req: { path: location.pathname }, data }} />
+        <Stack initContext={{ req: { path: location.pathname }, data }} />
       </React.Suspense>
     </AppScreenThemeProvider>
   </React.StrictMode>

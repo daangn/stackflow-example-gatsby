@@ -3252,9 +3252,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stackflow/link@npm:^0.9.2":
-  version: 0.9.2
-  resolution: "@stackflow/link@npm:0.9.2"
+"@stackflow/link@npm:^0.9.4":
+  version: 0.9.4
+  resolution: "@stackflow/link@npm:0.9.4"
   peerDependencies:
     "@stackflow/core": 0
     "@stackflow/plugin-history-sync": 0
@@ -3262,7 +3262,7 @@ __metadata:
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 013774978484e161e9d5e41e6645fefbecb5e85d9dc387aad4b7b1af1f876bf9bfe8ed4566efc62cf9d3c8e3c96c20fb74ea1774f6edf61ac5f40b90a2d5424f
+  checksum: 0ed751efc6e20a5150da58f126c21489df5410f445f55c6f820e0e640af88efc31758b91ec97e350c1a328446deb5c56dc4c851d51991c32fc14e6d4a2c6aecd
   languageName: node
   linkType: hard
 
@@ -14572,7 +14572,7 @@ __metadata:
     "@seed-design/stylesheet": ^1.0.0-beta.1
     "@stackflow/basic-ui": ^0.9.1
     "@stackflow/core": ^0.9.1
-    "@stackflow/link": ^0.9.2
+    "@stackflow/link": ^0.9.4
     "@stackflow/plugin-history-sync": ^0.9.1
     "@stackflow/plugin-preload": ^0.9.1
     "@stackflow/plugin-renderer-basic": ^0.9.1

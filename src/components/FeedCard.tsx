@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import { useFlow } from "../lib/useFlow";
+import { Link } from "../lib/Link";
 import { f } from "../styles";
 import * as css from "./FeedCard.css";
 
@@ -19,19 +19,17 @@ const FeedCard: React.FC<FeedCardProps> = ({
   region,
   daysAgo,
 }) => {
-  const { push } = useFlow();
-
   const imageUrl = `https://picsum.photos/800/800/?id=${articleId}`;
-
-  const onClick = () => {
-    push("Article", {
-      articleId: String(articleId),
-    });
-  };
 
   return (
     <div className={css.container}>
-      <button type="button" className={css.button} onClick={onClick}>
+      <Link
+        className={css.button}
+        activityName="Article"
+        activityParams={{
+          articleId: String(articleId),
+        }}
+      >
         <div className={css.thumbnail}>
           <LazyLoadImage
             className={f.imgObjectFitCover}
@@ -48,7 +46,7 @@ const FeedCard: React.FC<FeedCardProps> = ({
           </div>
           <div className={css.price}>£{price}.00</div>
         </div>
-      </button>
+      </Link>
     </div>
   );
 };

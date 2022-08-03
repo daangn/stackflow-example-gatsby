@@ -39,7 +39,7 @@ export const { Stack } = stackflow({
 
           if (!preloadDataMap[key]) {
             const promise = window.___loader
-              .loadPage(eventContext["plugin-history-sync"].path)
+              .loadPage(eventContext.path)
               .then((result: any) => {
                 preloadDataMap[key] = {
                   _t: "ok",
@@ -74,7 +74,7 @@ export const { Stack } = stackflow({
 
           if (!preloadDataMap[key]) {
             const promise = window.___loader
-              .loadPage(eventContext["plugin-history-sync"].path)
+              .loadPage(eventContext.path)
               .then((result: any) => {
                 preloadDataMap[key] = {
                   _t: "ok",

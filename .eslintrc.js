@@ -26,6 +26,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "jsx-a11y/anchor-is-valid": "off",
   },
   ignorePatterns: ["**/__generated__/**/*", "**/lib/**/*", "**/dist/**/*"],
 };

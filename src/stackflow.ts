@@ -27,19 +27,24 @@ export const { Stack } = stackflow({
     }),
     preloadPlugin({
       loaders: {
-        Main({ activityParams, isInitialActivity, initContext, eventContext }) {
+        Main({
+          activityParams,
+          isInitialActivity,
+          initContext,
+          activityContext,
+        }) {
           const key = `Main#${JSON.stringify(activityParams)}`;
 
           if (isInitialActivity) {
             preloadDataMap[key] = {
               _t: "ok",
-              data: initContext.data,
+              data: (initContext as any).data,
             };
           }
 
           if (!preloadDataMap[key]) {
             const promise = window.___loader
-              .loadPage(eventContext.path)
+              .loadPage((activityContext as any).path)
               .then((result: any) => {
                 preloadDataMap[key] = {
                   _t: "ok",
@@ -61,20 +66,20 @@ export const { Stack } = stackflow({
           activityParams,
           isInitialActivity,
           initContext,
-          eventContext,
+          activityContext,
         }) {
           const key = `Article#${JSON.stringify(activityParams)}`;
 
           if (isInitialActivity) {
             preloadDataMap[key] = {
               _t: "ok",
-              data: initContext.data,
+              data: (initContext as any).data,
             };
           }
 
           if (!preloadDataMap[key]) {
             const promise = window.___loader
-              .loadPage(eventContext.path)
+              .loadPage((activityContext as any).path)
               .then((result: any) => {
                 preloadDataMap[key] = {
                   _t: "ok",

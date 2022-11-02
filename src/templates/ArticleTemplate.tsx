@@ -1,3 +1,5 @@
+import "../activities/Article";
+
 import { graphql, PageProps } from "gatsby";
 import * as React from "react";
 

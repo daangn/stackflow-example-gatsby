@@ -1,3 +1,5 @@
+import { vars } from "@seed-design/design-token";
+import { basicUIPlugin } from "@stackflow/plugin-basic-ui";
 import { historySyncPlugin } from "@stackflow/plugin-history-sync";
 import { preloadPlugin } from "@stackflow/plugin-preload";
 import { basicRendererPlugin } from "@stackflow/plugin-renderer-basic";
@@ -13,11 +15,35 @@ const activities = {
   Article: React.lazy(() => import("./activities/Article")),
 };
 
+const theme =
+  typeof window !== "undefined" &&
+  /iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase())
+    ? "cupertino"
+    : "android";
+
+const borderColor =
+  theme === "cupertino"
+    ? vars.$semantic.color.divider3
+    : vars.$semantic.color.divider2;
+
 export const { Stack } = stackflow({
   transitionDuration: 350,
   activities,
   plugins: [
     basicRendererPlugin(),
+    basicUIPlugin({
+      theme:
+        typeof window !== "undefined" &&
+        /iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase())
+          ? "cupertino"
+          : "android",
+      backgroundColor: vars.$semantic.color.paperDefault,
+      appBar: {
+        borderColor,
+        textColor: vars.$scale.color.gray900,
+        iconColor: vars.$scale.color.gray900,
+      },
+    }),
     historySyncPlugin({
       routes: {
         Main: "/",

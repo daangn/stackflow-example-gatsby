@@ -1,3 +1,4 @@
+import { AppScreen } from "@stackflow/plugin-basic-ui";
 import { useActivityPreloadRef } from "@stackflow/plugin-preload";
 import { ActivityComponentType } from "@stackflow/react";
 import React from "react";
@@ -8,7 +9,6 @@ import IconSearch from "../assets/IconSearch";
 import IconSettings from "../assets/IconSettings";
 import BottomTab from "../components/BottomTab";
 import FeedCard from "../components/FeedCard";
-import Layout from "../components/Layout";
 import { readPreloadData } from "../lib/readPreloadData";
 import * as css from "./Main.css";
 
@@ -34,7 +34,7 @@ const Main: ActivityComponentType = () => {
   );
 
   return (
-    <Layout
+    <AppScreen
       appBar={{
         appendLeft: appBarLeft,
         appendRight: appBarRight,
@@ -57,7 +57,7 @@ const Main: ActivityComponentType = () => {
           <BottomTab />
         </div>
       </div>
-    </Layout>
+    </AppScreen>
   );
 };
 

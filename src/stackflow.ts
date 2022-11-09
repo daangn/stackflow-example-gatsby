@@ -32,11 +32,7 @@ export const { Stack } = stackflow({
   plugins: [
     basicRendererPlugin(),
     basicUIPlugin({
-      theme:
-        typeof window !== "undefined" &&
-        /iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase())
-          ? "cupertino"
-          : "android",
+      theme,
       backgroundColor: vars.$semantic.color.paperDefault,
       appBar: {
         borderColor,

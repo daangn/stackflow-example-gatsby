@@ -16,7 +16,7 @@ export const wrapPageElement = ({
 }: WrapPageElementBrowserArgs) => (
   <React.StrictMode>
     <React.Suspense>
-      <Stack initContext={{ req: { path: location.pathname }, data }} />
+      <Stack initialContext={{ req: { path: location.pathname }, data }} />
     </React.Suspense>
   </React.StrictMode>
 );

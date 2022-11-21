@@ -52,7 +52,7 @@ export const { Stack } = stackflow({
         Main({
           activityParams,
           isInitialActivity,
-          initContext,
+          initialContext,
           activityContext,
         }) {
           const key = `Main#${JSON.stringify(activityParams)}`;
@@ -60,7 +60,7 @@ export const { Stack } = stackflow({
           if (isInitialActivity) {
             preloadDataMap[key] = {
               _t: "ok",
-              data: (initContext as any).data,
+              data: initialContext.data,
             };
           }
 
@@ -87,7 +87,7 @@ export const { Stack } = stackflow({
         Article({
           activityParams,
           isInitialActivity,
-          initContext,
+          initialContext,
           activityContext,
         }) {
           const key = `Article#${JSON.stringify(activityParams)}`;
@@ -95,7 +95,7 @@ export const { Stack } = stackflow({
           if (isInitialActivity) {
             preloadDataMap[key] = {
               _t: "ok",
-              data: (initContext as any).data,
+              data: initialContext.data,
             };
           }
 

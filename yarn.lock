@@ -3228,17 +3228,17 @@ __metadata:
   linkType: hard
 
 "@stackflow/core@npm:canary":
-  version: 0.16.1-alpha.21
-  resolution: "@stackflow/core@npm:0.16.1-alpha.21"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/core@npm:0.16.1-alpha.34"
   dependencies:
     react-fast-compare: ^3.2.0
-  checksum: 02be4321e5785e1620c1ee00367d9533b846f302acea4c921f425348fffac3b2e69321c77e71ec9e839b40f8128e7e9efde24b2fef827b1d28dd95c829fcf6b5
+  checksum: 4ffca60307204bb1be604becc1bf9ada295145a405d3327dab6ebf99f49fd84f59dac3ce63fc87ef1591ee1240ab04e830afd0f830651a2fe10b5f61874d13ca
   languageName: node
   linkType: hard
 
 "@stackflow/link@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/link@npm:0.16.1-alpha.22"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/link@npm:0.16.1-alpha.34"
   peerDependencies:
     "@stackflow/core": 0
     "@stackflow/plugin-history-sync": 0
@@ -3246,13 +3246,13 @@ __metadata:
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 29614d04165604c55110bb28f07437ae46f8ba919aeb0d43e07fc55d866a443e90d49c00f48a5db956b9f1204a6d6f22f140775d4cc6589aab8708b1f0003bc6
+  checksum: 23f6edf1068ccbc607d57bc142d83620d60d201a3b5f8832984b1c73f2bd4ea3e57132a65dd9a7bdc4ffe16e41d4c21a0eb27c6d559e026f0d6a4e002bc00972
   languageName: node
   linkType: hard
 
 "@stackflow/plugin-basic-ui@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/plugin-basic-ui@npm:0.16.1-alpha.22"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/plugin-basic-ui@npm:0.16.1-alpha.34"
   dependencies:
     "@vanilla-extract/dynamic": ^2.0.2
     "@vanilla-extract/private": ^1.0.3
@@ -3263,13 +3263,13 @@ __metadata:
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 16437a8fa699c71737a960cb4398bf04606864f602205051e0320b6dfbc389ce150bdd8788c713541df6822745d82856ef4e8f446a9a0ed60da7aa9e6d086693
+  checksum: cd26943c50dd4d8bacd116e916f75fd90240fb5046c5103bd74b4766965103b034b1f8a5c6bd1ef3292e4dc11a4abb96eb94d5787764fa2dedb8b1f0434060c6
   languageName: node
   linkType: hard
 
-"@stackflow/plugin-history-sync@npm:^0.16.1-alpha.22+822eeda0, @stackflow/plugin-history-sync@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/plugin-history-sync@npm:0.16.1-alpha.22"
+"@stackflow/plugin-history-sync@npm:^0.16.1-alpha.34+118e2bdb, @stackflow/plugin-history-sync@npm:canary":
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/plugin-history-sync@npm:0.16.1-alpha.34"
   dependencies:
     url-pattern: ^1.0.3
   peerDependencies:
@@ -3277,46 +3277,47 @@ __metadata:
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 8fceebd1d4cd37ac72ac22c55665fbad8ff764839252bb0139771320a823c128a29c0207b5a3946003854b46d43a51d5b195a06058f7085708aac47f8eb3209f
+  checksum: 349e1252d0474a46c79a4524a600dad05f05f10ec00a2581c7632d24d23a10bf7beb276299696be7b620a89fa409efebcda54c187a626fb875c944860083be06
   languageName: node
   linkType: hard
 
 "@stackflow/plugin-preload@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/plugin-preload@npm:0.16.1-alpha.22"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/plugin-preload@npm:0.16.1-alpha.34"
   dependencies:
-    "@stackflow/plugin-history-sync": ^0.16.1-alpha.22+822eeda0
+    "@stackflow/plugin-history-sync": ^0.16.1-alpha.34+118e2bdb
   peerDependencies:
     "@stackflow/core": 0
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: ce34a91bdab907c711bb34b7f358a355c8d75f5e6ecb2e8257965d2be6707bbcf8de76685eb2b5243782c3455b77537d02dcd6f8049b462d1056cca76fa5bad4
+  checksum: 6c6d970b9bfd9cfb3c760ac94e1ed2b2ac40febcbe4e2c14ebd481535925c7604c8f26490f5f6e115d30fabdcf188e2305b58d5d7fd6a1e5e7973a24a26568a6
   languageName: node
   linkType: hard
 
 "@stackflow/plugin-renderer-basic@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/plugin-renderer-basic@npm:0.16.1-alpha.22"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/plugin-renderer-basic@npm:0.16.1-alpha.34"
   peerDependencies:
     "@stackflow/core": 0
     "@stackflow/react": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 57b206d04ca18acbb3d1bd6d97c48e51ac5ff3b9e3b9ee4ba1c0b300422019b5ba9258f8c5e0cbaa52f76a4f856afbd2c060c4c6ebf9098a7837285dd9a07199
+  checksum: 44c09d31611df1f8993ec10870f147a697cc1067408aa432543ddd8cf70a43041ba24ae058f8b09c4544b87a818f1b1a215920f90eb67b4062f2d02b1b54bbf8
   languageName: node
   linkType: hard
 
 "@stackflow/react@npm:canary":
-  version: 0.16.1-alpha.22
-  resolution: "@stackflow/react@npm:0.16.1-alpha.22"
+  version: 0.16.1-alpha.34
+  resolution: "@stackflow/react@npm:0.16.1-alpha.34"
   dependencies:
     react-fast-compare: ^3.2.0
+    use-sync-external-store: ^1.2.0
   peerDependencies:
     "@stackflow/core": 0
     "@types/react": ">=16.8.0"
     react: ">=16.8.0"
-  checksum: 6f22316a2638626406122525dfd5343b00e9a7d637e5fa7ee62c0f990611f1c66ee2df662703d2905d88b655135dc33b787c0f4851aed5120f6a4c512064a275
+  checksum: 2106f06d98cf7d65227c8ea4fde76321a1e26b57ad24c99c049115a965a40a1550ef09ca5e8e8b7de548f374ea26af85ac06c8e9c1ded6f738a8b2d3ff51a9d6
   languageName: node
   linkType: hard
 
@@ -15746,6 +15747,15 @@ __metadata:
   version: 1.0.3
   resolution: "url-pattern@npm:1.0.3"
   checksum: 7f4c57707240f0eb18f4654c4206b8669de037594beb86abd090d4e3dacd4751fcb3a04e271a74cbbe2124bc573e857d8c0588c4accb17da03a62082a58559fc
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
   languageName: node
   linkType: hard
 

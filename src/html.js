@@ -8,7 +8,7 @@ const SEED_SCALE_COLOR_SCRIPT = dedent`
   (() => {var e=document.documentElement;e.dataset.seed="";var pd=window.matchMedia("(prefers-color-scheme: dark)"),a=()=>{e.dataset.seedScaleColor=pd.matches?"dark":"light"};"addEventListener"in pd?pd.addEventListener("change",a):"addListener"in pd&&pd.addListener(a),a();})()
 `;
 const STACKFLOW_BASIC_UI_THEME_SCRIPT = dedent`
-  (() => {var c=/iphone|ipad|ipod/i.test(window.navigator.userAgent.toLowerCase()),e=document.documentElement;e.dataset.stackflowBasicUiTheme=c?"cupertino":"android";})()
+  (() => {var c=/iphone|ipad|ipod/i.test(window.navigator.userAgent.toLowerCase()),e=document.documentElement;e.dataset.stackflowPluginBasicUiTheme=c?"cupertino":"android";})()
 `;
 
 export default function HTML(props) {
@@ -17,7 +17,7 @@ export default function HTML(props) {
       {...props.htmlAttributes}
       data-seed=""
       data-seed-scale-color="light"
-      data-stackflow-basic-ui-theme="android"
+      data-stackflow-plugin-basic-ui-theme="android"
     >
       <head>
         <meta charSet="utf-8" />

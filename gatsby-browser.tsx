@@ -7,7 +7,6 @@ import "./src/styles/f.css";
 
 import { WrapPageElementBrowserArgs } from "gatsby";
 import React from "react";
-import ReactDOM from "react-dom/client";
 
 import { Stack } from "./src/stackflow";
 
@@ -16,11 +15,7 @@ export const wrapPageElement = ({
 }: WrapPageElementBrowserArgs) => (
   <React.StrictMode>
     <React.Suspense>
-      <Stack initContext={{ req: { path: location.pathname }, data }} />
+      <Stack initialContext={{ req: { path: location.pathname }, data }} />
     </React.Suspense>
   </React.StrictMode>
 );
-
-export const replaceHydrateFunction = () => (element, container) => {
-  ReactDOM.hydrateRoot(container, element);
-};
